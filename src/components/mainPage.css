@@ -1,0 +1,107 @@
+.mainBox {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    direction: rtl;
+  }
+  
+  .left {
+    /* border: 1px solid violet; */
+  
+    & form {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 85%;
+      height: 65%;
+      border-radius: var(--bow);
+      box-shadow: var(--shadow);
+  
+      & input {
+        width: 90%;
+        padding: 12px;
+        border: 2px solid var(--color_2);
+        border-radius: var(--bow);
+        font-size: 1rem;
+        font-weight: bold;
+      }
+  
+      & input:nth-child(3) {
+        background-color: var(--color_1);
+        color: var(--white);
+        cursor: pointer;
+      }
+      & input:nth-child(3):hover {
+        background-color: hsla(214, 89%, 52%, 0.9);
+      }
+  
+      & a {
+        color: var(--color_1);;
+      }
+      & a:hover {
+        text-decoration: underline;
+      }
+  
+      & input:nth-child(5) {
+        width: 50%;
+        background-color: #36a420;
+        color: var(--white);
+        cursor: pointer;
+      }
+      & input:nth-child(5):hover {
+        background-color: hsla(110, 67%, 38%, 0.9);
+      }
+    }
+  
+    & p {
+      margin-top: 28px;
+      font-size: 14px;
+    }
+  
+    & a {
+      margin-top: 8px;
+    }
+  }
+  
+  .right {
+    /* border: 1px solid violet;/ */
+    align-items: start;
+  
+    & h1 {
+      font-size: 3.5rem;
+      color: var(--color_1);
+    }
+  
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+
+/* Oo phones */
+@media (max-width: 768px) {
+
+    .box {
+      width: 100%;
+    }
+
+    .left form {
+      width: 100%;
+    }
+
+    .right {
+      display: none;
+    }
+    
+  }

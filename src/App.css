@@ -1,0 +1,53 @@
+:root {
+  --white: #f1f1f1;
+  --black: #1f1f1f;
+  --color_1: #1877f2;
+  --color_2: #f2f4f7;
+  /* --color_3: #;
+  --color_4: #; */
+  --fontColor: #1f1f1f;
+  /* --gradient: linear-gradient(40deg, var(--color_1), var(--color_2), var(--color_1)); */
+  --bow: 6px;
+  --shadow: -2px 2px 8px -4px rgba(0,0,0,0.75);
+  --smooth: .3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+body {
+  background-color: var(--color_2);
+  /* height: 100vh; */
+  font-family: Tahoma, Arial;
+  color: var(--fontColor);
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+button {
+  outline: none;
+}
+
+.container {
+  /* height: 100vh; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 2rem;
+}
+
+/* On phones */
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+}
